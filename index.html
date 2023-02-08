@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <header class="header">
       <div class="container">
         <div class="header_img">
@@ -30,7 +31,7 @@
             </p>
             <button class="header_description_btn">See Our Project</button>
           </div>
-          <img src="img/illustration.png" alt="" />
+          <img class="header_description_img" src="img/illustration.png" alt="photo" />
         </div>
       </div>
     </header>
@@ -38,45 +39,42 @@
     <main>
       <div class="about">
         <div class="container">
-          <div class="heading">
+          <h2 class="heading">
             What we do to help our client grow in digital era
-          </div>
-          <div class="about_cards">
+          </h2>
+          <div class="about_box_card">
             <div class="about_card">
-                <img class="about_card_img" src="img/business.png" alt="" />
-                <h3 class="about_card_title">
-                  Make Your business To Be Better Famous In Internet
-                </h3>
-                <p class="about_card_text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <a class="about_card_link" href="https://www.google.ru/"
-                  >Learn more</a>
+              <img class="about_card_img" src="img/business.png" alt="business" />
+              <h3 class="about_card_title">
+                Make Your business To Be Better Famous In Internet
+              </h3>
+              <p class="about_card_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a class="about_card_link" href="#">Learn more</a>
             </div>
             <div class="about_card">
-                <img class="about_card_img" src="img/technologies.png" alt="" />
-                <h3 class="about_card_title">
-                  Bring Technology To Your Comfrotable Home
-                </h3>
-                <p class="about_card_text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <a class="about_card_link" href="https://www.google.ru/"
-                  >Learn more</a>
+              <img class="about_card_img" src="img/technologies.png" alt="technologies" />
+              <h3 class="about_card_title">
+                Bring Technology To Your Comfrotable Home
+              </h3>
+              <p class="about_card_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a class="about_card_link" href="#">Learn more</a>
             </div>
             <div class="about_card">
-                <img class="about_card_img" src="img/it.png" alt="" />
-                <h3 class="about_card_title">
-                  Build Your Digital Product That Suitable For Your Need
-                </h3>
-                <p class="about_card_text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <a class="about_card_link" href="https://www.google.ru/"
-                  >Learn more</a>
+              <img class="about_card_img" src="img/it.png" alt="it" />
+              <h3 class="about_card_title">
+                Build Your Digital Product That Suitable For Your Need
+              </h3>
+              <p class="about_card_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a class="about_card_link" href="#">Learn more</a>
             </div>
           </div>
         </div>
@@ -84,20 +82,23 @@
 
       <div class="projects">
         <div class="container">
-          <div class="heading">Our Finished Project</div>
+          <h2 class="heading">Our Finished Project</h2>
           <p class="projects_text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
           </p>
           <div class="projects_house">
+            <img class="projects_house_img" src="img/house.png" alt="house">
             <p class="projects_house_text">Smart Home Installation</p>
           </div>
           <div class="projects_card">
             <div class="projects_sparklite_app">
+              <img class="projects_sparklite_app_img" src="img/Sparklite App.png" alt="Sparklite">
               <p class="projects_heading">Sparklite App</p>
             </div>
             <div class="projects_car">
+              <img class="projects_car_img" src="img/car.png" alt="car">
               <p class="projects_heading">Car-Rapetition App</p>
             </div>
           </div>
@@ -105,35 +106,35 @@
       </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer_top footer_line">
       <div class="container">
         <div class="footer_block">
           <div class="footer_description">
-            <h2 class="footer_description_title">
+            <h2 class="footer_title">
               Intersted to woek with our team?
             </h2>
-            <p class="footer_description_text">
+            <p class="footer_text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </p>
           </div>
-          <div class="footer_top_button">
-            <button class="footer_top_btn">Let’s Talk</button>
+          <div class="footer_button">
+            <button class="footer_btn">Let’s Talk</button>
           </div>
         </div>
       </div>
-      <div class="footer_line"></div>
-      <div class="footer_list">
+    </footer>
+    <footer class="footer_bottom">
         <div class="container">
           <ol>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            <li>+7-812-7313-4321</li>
-            <li>hello.site@gmail.com</li>
+            <li><a href="#" class="footer_item">1.  Lorem ipsum dolor sit
+               amet,<span>consectetur adipisicing elit.</span></a></li>
+            <li><a href="#" class="footer_item">2. +7-812-7313-4321</a></li>
+            <li><a href="#" class="footer_item">3.  hello.site@gmail.com</a></li>
           </ol>
           <div class="footer_copy">1t Sprint 2022 All rights reserved.</div>
         </div>
-      </div>
     </footer>
   </body>
 </html>

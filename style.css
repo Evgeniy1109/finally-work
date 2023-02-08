@@ -43,6 +43,11 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+.header_description{
+    width: 50%;
 }
 .header_description_title {
     font-size: 64px;
@@ -76,11 +81,16 @@ body {
     background-color: #092448;
     color: #abecf5;
 }
+.header_description_img{
+    width: 50%;
+}
 
 /* about */
 
-.about_cards {
+.about_box_card {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 38px;
 }
 .about_card {
@@ -143,74 +153,80 @@ body {
     margin-bottom: 65px;
 }
 .projects_house {
-    background-image: url("img/house.png");
-    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 32px;
+}
+.projects_house_img{
     width: 100%;
-    height: 492px;
-    margin-bottom: 33px;
 }
 .projects_house_text {
-    display: flex;
-    justify-content: end;
-    padding-top: 65px;
-    padding-right: 76px;
+    position: absolute;
+    top: 65px;
+    right: 76px;
     font-size: 32px;
     line-height: 46px;
     font-weight: 400;
     color: #ffffff;
 }
 .projects_card {
+    position: relative;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 38px;
     margin-bottom: 107px;
 }
-.projects_sparklite_app {
-    background-image: url("img/Sparklite\ App.png");
-    width: 663px;
-    height: 428px;
+
+.projects_sparklite_app_img, .projects_car_img{
+    width: 100%;
+    position: relative;
 }
-.projects_car {
-    background-image: url("img/car.png");
-    width: 663px;
-    height: 428px;
+.projects_sparklite_app, .projects_car{
+    position: relative;
 }
 .projects_heading {
+    position: absolute;
+    top: 32px;
+    left: 38px;
     font-size: 32px;
     line-height: 46px;
     font-weight: 400;
     color: #ffffff;
-    padding-top: 32px;
-    padding-left: 38px;
 }
 
 /* footer */
-.footer {
+.footer_top {
+    background-color: #316099;
+}
+.footer_bottom{
     background-color: #316099;
 }
 .footer_block {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding-bottom: 96px;
 }
-.footer_description_title {
-    max-width: 340px;
+.footer_description{
+    width: 40%;
+    padding-left: 113px;
+}
+.footer_title {
     font-size: 36px;
     line-height: 46px;
     font-weight: 400;
     color: #ffffff;
     margin-bottom: 32px;
     padding-top: 91px;
-    padding-left: 113px;
 }
-.footer_description_text {
-    max-width: 395px;
+.footer_text {
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
     color: #ffffff;
-    padding-left: 113px;
 }
-.footer_top_btn {
+.footer_btn {
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
@@ -223,23 +239,23 @@ body {
     margin-right: 114px;
     transition-duration: 0.5s;
 }
-.footer_top_btn:hover {
+.footer_btn:hover {
     transform: scale(1.2);
     background-color: #092448;
     border: 1px solid #092448;
     color: #abecf5;
 }
 .footer_line {
-    border: 1px solid #ffffff;
-    opacity: 0.4;
+    border-bottom: 1px solid #ffffff;
 }
-.footer_list ol {
+.footer_bottom ol {
     display: flex;
     padding-top: 64px;
     padding-left: 113px;
 }
-.footer_list li {
-    width: 316px;
+.footer_bottom li {
+    width: 33%;
+    list-style: none;
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
@@ -255,4 +271,133 @@ body {
     font-weight: 400;
     color: #ffffff;
     opacity: 0.4;
+}
+.footer_item{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ffffff;
+    transition-duration: 0.5s;
+
+}
+.footer_item:hover{
+    color: #092448;
+}
+.footer_item span{
+    display: block;
+}
+
+
+@media (max-width: 1260px){
+    .header, .about, .projects{
+        padding: 0 32px;
+    }
+}
+
+@media (max-width: 860px){
+    .footer_btn{
+        padding: 5px 30px 5px 30px;
+    }
+    .footer_bottom ol{
+        display: block;
+    }
+    .footer_bottom li{
+        margin-bottom: 25px;
+    }
+    .footer_copy{
+        padding-top: 64px;
+    }
+}
+
+@media (max-width: 767px){
+    .header_img{
+        padding-bottom: 36px;
+    }
+    .header_description_img{
+        display: none;
+    }
+    .header_block{
+        padding-bottom: 41px;
+    }
+    .header_description{
+        width: 100%;
+        justify-content: center;
+    }
+    .header_description_title{
+        text-align: center;
+        font-size: 32px;
+        line-height: 37px;
+        font-weight: 300;
+        color: #1F3F68;
+        margin-bottom: 12px;
+    }
+    .header_description_text{
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .header_description_btn{
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 41px;
+    }
+    .heading{
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 300;
+        color: #000;
+    }
+    .projects_house_text{
+        top: 16px;
+        right: 16px;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+    .projects_house{
+        margin-bottom: 16px;
+    }
+    .projects_card{
+        gap: 16px;
+        margin-bottom: 64px;
+    }
+    .projects_heading{
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+    .footer_block{
+        display: block;
+        padding: 0;
+    }
+    .footer_description{
+        width: 90%;
+        display: block;
+        padding: 0 15px 0 15px;
+        text-align: center;
+    }
+    .footer_title{
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 400;
+        padding-top: 18px;
+    }
+    .footer_button{
+        /* width: 100%; */
+        text-align: center;
+    }
+    .footer_btn{
+        margin: 40px auto;
+    }
+    .footer_bottom li{
+        width: 100%;
+    }
+    .footer_bottom ol{
+        padding: 32px 0 0 16px;
+    }
+    .footer_copy{
+        padding-top: 37px;
+        padding-bottom: 13px;
+        text-align: center;
+        padding-left: 0;
+    }
 }
