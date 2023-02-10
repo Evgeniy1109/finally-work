@@ -84,6 +84,10 @@ body {
 .header_description_img{
     width: 50%;
 }
+.header_description_img>img{
+    width: 100%;
+    height: auto;
+}
 
 /* about */
 
@@ -309,7 +313,7 @@ body {
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 760px){
     .header_img{
         padding-bottom: 36px;
     }
@@ -361,6 +365,8 @@ body {
         margin-bottom: 64px;
     }
     .projects_heading{
+        top: 26px;
+        left: 16px;
         font-size: 16px;
         line-height: 18px;
         font-weight: 400;
@@ -382,7 +388,7 @@ body {
         padding-top: 18px;
     }
     .footer_button{
-        /* width: 100%; */
+        width: 100%;
         text-align: center;
     }
     .footer_btn{
@@ -401,3 +407,5 @@ body {
         padding-left: 0;
     }
 }
+
+
